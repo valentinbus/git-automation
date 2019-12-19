@@ -15,7 +15,7 @@ USERNAME = "valentinbus"
 TOKEN = os.getenv("GITHUB_ACCESS_TOKEN")
 
 
-def create_repo():
+def delete_repo():
     """
     Create and init repo on github
     """
@@ -25,28 +25,19 @@ def create_repo():
         "name": repo_name
     }
 
-    requests.post(
-        CREATE_REPO_URL,
-        auth=(USERNAME, TOKEN),
-        data=json.dumps(body)
+    requests.delete(
+        f"{DELETE_REPO_URL}/{USERNAME}/{repo_name}",
+        auth=(USERNAME, TOKEN)
     )
 
-    init_local_folder(repo_name)
+    delete_local_folder(repo_name)
 
-def init_local_folder(folder_name):
+def delete_local_folder(folder_name):
     """
     Create and init local folder
     """
-    cmd = f"sh .gitinit.sh {folder_name}"
-
-    
-    try:
-        #os.makedirs(PATH+folder_name)
-        os.system(cmd)
-    except FileExistsError:
-        logging.debug("You have to remove your existing folder first")
-
-    return "Success creation folder"
+    cmd = f"sh .gitdelete.sh {folder_name}"
+    os.system(cmd)
 
 if __name__ == "__main__":
-    create_repo()
+    delete_repo()
