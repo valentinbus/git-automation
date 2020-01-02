@@ -40,7 +40,7 @@ def init_local_folder(folder_name):
     Create and init local folder
     """
     time.sleep(2)
-    cmd = f"sh $path_to_repo_folder/git-automation.gitinit.sh {folder_name}"
+    cmd = f"sh /Users/valentinbus/Documents/repo/git-automation/.gitinit.sh {folder_name}"
 
     try:
         os.makedirs(PATH+folder_name)

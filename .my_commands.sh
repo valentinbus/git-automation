@@ -1,9 +1,9 @@
 #!/bin/bash
 
 function create() {
-    python create.py $1
+    python /Users/valentinbus/Documents/repo/git-automation/create.py $1
 }
 
 function delete() {
-    python delete.py $1
+    python /Users/valentinbus/Documents/repo/git-automation/delete.py $1
 }

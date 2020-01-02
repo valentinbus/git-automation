@@ -36,7 +36,7 @@ def delete_local_folder(folder_name):
     """
     Create and init local folder
     """
-    cmd = f"sh *path_to_repo_folder/git-automation .gitdelete.sh {folder_name}"
+    cmd = f"sh /Users/valentinbus/Documents/repo/git-automation/.gitdelete.sh {folder_name}"
     os.system(cmd)
 
 if __name__ == "__main__":
