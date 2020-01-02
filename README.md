@@ -12,3 +12,10 @@
 
 ### Process
 With this project you can create a repository on your github, create local folder init and push a first initial commit with README.md with only one command
+
+
+### Example
+![](Screen Recording 2019-12-19 at 15.30.03.mov)
+<iframe width="320" height="240" controls>
+  <source src="/Users/valentinbus/Documents/repo/git-automation/Screen Recording 2019-12-19 at 15.30.03.mov" type="video/mp4">
+</iframe>
