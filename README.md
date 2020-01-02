@@ -15,7 +15,6 @@ With this project you can create a repository on your github, create local folde
 
 
 ### Example
-![](Screen Recording 2019-12-19 at 15.30.03.mov)
-<iframe width="320" height="240" controls>
-  <source src="/Users/valentinbus/Documents/repo/git-automation/Screen Recording 2019-12-19 at 15.30.03.mov" type="video/mp4">
-</iframe>
+![]("Screen Recording 2019-12-19 at 15.30.03.mov")
+<video src="/Users/valentinbus/Documents/repo/git-automation/Screen Recording 2019-12-19 at 15.30.03.mov" width="320" height="240" controls>
+</video>
